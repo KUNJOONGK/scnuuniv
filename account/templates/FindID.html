@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디, 비밀번호 찾기</title>
+    <link rel="stylesheet" href="{% static 'FindID.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ly-container hub">
+        <div class="ly-body">
+          <div class="container" id="contents">
+            
+            
+            
+            <div class="sub-contents">
+              <!-- s: location -->
+              
+              
+              <!-- s: 아이디, 비밀번호 찾기 -->
+              <div class="login-wrap">
+                <h2>아이디, 비밀번호 찾기</h2>
+                <fieldset>
+                  <legend>아이디, 비밀번호 찾기</legend>
+                  <div class="tab-wrapper">
+                    <ul class="tab-list tablist col2">
+                      <li data-tab-header="0" data-tab-content="#tab1"><a href="#tab1">아이디 찾기</a></li>
+                      <li data-tab-header="1" data-tab-content="#tab2"><a href="#tab2">비밀번호 찾기</a></li>
+                    </ul>
+                    <div class="tab-container">
+                      <div id="tab1">
+                        <h3 class="aria-hidden">아이디 찾기</h3>
+                        <div class="find-id-pwd">
+                          <label for="inp-name01">Name</label>
+                          <input type="text" id="inp-name01" class="input text-uppercase" placeholder="성명" title="성명(한글) 입력" onkeydown="return validationCheck(event,'4');" onkeyup="validationCheck(event,'4');">
+                          <input type="hidden" id="inp-name02" class="input text-uppercase" placeholder="Last Name(성)" title="성명(한글) Last Name 입력" onkeydown="return validationCheck(event,'4');" onkeyup="validationCheck(event,'4');">
+                          <!-- <div class="input-type-name">
+                            <input type="text" id="inp-name01" class="input text-uppercase" placeholder="First Name(성명)" title="성명(한글) First Name 입력" onkeydown="return validationCheck(event,'4');" onkeyup="validationCheck(event,'4');">
+                            <input type="hidden" id="inp-name02" class="input text-uppercase" placeholder="Last Name(성)" title="성명(한글) Last Name 입력" onkeydown="return validationCheck(event,'4');" onkeyup="validationCheck(event,'4');">
+                          </div> -->
+                        </div>
+                        <div class="find-id-pwd">
+                          <div class="radio-wrap1">
+                              
+                              <label class="form-div1"><input type="radio" class="radio" name="chkCertifyType1" value="mail" onclick="onChangeCertify('1', 'mail')"> <span>E-mail (E-mail수신)</span></label>
+                          </div>                    
+                          
+                          <div class="input-type-mail" id="mailContainer1" hidden="">
+                              <input type="text" class="input" id="inp-id-mail01" title="이메일 아이디 입력" onkeydown="return validationCheck(event,'3');" onkeyup="validationCheck(event,'3');">
+                              <span class="hyp">@</span>
+                              <input type="text" class="input email" title="이메일 주소 입력" id="inp-id-mail02">
+                              <select class="inp-select" id="inp-id-mail03" title="이메일 주소 선택">
+                                <option>직접입력</option>
+                                <option>naver.com</option>
+                              </select>
+                          </div>
+                        </div>
+                        <button id="loginSubmit" type="submit">FIND YOUR ID</button>
+                      </div>
+                      <div id="tab2">
+                        <h3 class="aria-hidden">비밀번호 찾기</h3>
+                        <div class="find-id-pwd">
+                          <label for="inp-id">ID</label>
+                          <input type="text" id="inp-id" class="input" placeholder="8~20자의 영문 소문자, 숫자 조합" title="ID 입력(8~20자의 영문 소문자, 숫자 조합)" maxlength="20" onkeydown="return validationCheck(event,'1');" onkeyup="validationCheck(event,'1');">
+                        </div>
+                        <div class="find-id-pwd">
+                          <label for="inp-pwd-name01">Name</label>
+                          <input type="text" id="inp-pwd-name01" class="input text-uppercase" placeholder="성명" title="성명(한글) 입력" onkeydown="return validationCheck(event,'4');" onkeyup="validationCheck(event,'4');">
+                          <input type="hidden" id="inp-pwd-name02" class="input text-uppercase" placeholder="Last Name(성)" title="성명(영문) Last Name 입력" onkeydown="return validationCheck(event,'4');" onkeyup="validationCheck(event,'4');">
+                          <!-- <div class="input-type-name">
+                            <input type="text" id="inp-pwd-name01" class="input text-uppercase" placeholder="First Name(성명)" title="성명(영문) First Name 입력" onkeydown="return validationCheck(event,'4');" onkeyup="validationCheck(event,'4');">
+                            <input type="text" id="inp-pwd-name02" class="input text-uppercase" placeholder="Last Name(성)" title="성명(영문) Last Name 입력" onkeydown="return validationCheck(event,'4');" onkeyup="validationCheck(event,'4');">
+                          </div> -->
+                        </div>
+                        <div class="find-id-pwd">
+                          <div class="radio-wrap1">
+                              
+                              <label class="form-div1"><input type="radio" class="radio" name="chkCertifyType2" value="mail" onclick="onChangeCertify('2', 'mail')"> <span>E-mail (E-mail수신)</span></label>
+                          </div>                    
+                          
+                          <div class="input-type-mail" id="mailContainer2" hidden="">
+                              <input type="text" class="input" id="inp-pwd-mail01" title="이메일 아이디 입력" onkeydown="return validationCheck(event,'3');" onkeyup="validationCheck(event,'3');">
+                              <span class="hyp">@</span>
+                              <input type="text" class="input email" title="이메일 주소 입력" id="inp-pwd-mail02">
+                              <select class="inp-select" id="inp-pwd-mail03" title="이메일 주소 선택">
+                                <option>직접입력</option>
+                                <option>naver.com</option>
+                              </select>
+                          </div>
+                        </div>
+                        <button id="loginSubmit02" type="submit">FIND YOUR PASSWORD</button>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- e: 아이디, 비밀번호 찾기 -->
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

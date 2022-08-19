@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="{% static 'signup.css' %}">
+    <title>기억조각</title>
+</head>
+<>
+    <header>
+        <div class="wrapper">
+            <h1>기억조각</h1>
+            <nav>
+            <ul class="menu">
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./Write.html">Write</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+            </nav>
+        </div>
+        </header>
+    <div>
+        <div class="umm">
+         <div class="JO-IN">
+    <form action="join" method="POST" class="joinForm" onsubmit="submit(Home.html); return false;">                                                                                 
+        <h2>회원가입</h2>
+        <div class="textForm">
+          <input name="loginId" type="text" class="id" placeholder="아이디">
+          </input>
+        </div>
+        <div class="textForm">
+          <input name="loginPw" type="password" class="pw" placeholder="비밀번호">
+        </div>
+         <div class="textForm">
+          <input name="loginPwConfirm" type="password" class="pw" placeholder="비밀번호 확인">
+        </div>
+        <div class="textForm">
+          <input name="name" type="text" class="name" placeholder="이름">
+        </div>
+         <div class="textForm">
+          <input name="email" type="text" class="email" placeholder="이메일">
+        </div>
+        <div class="textForm">
+          <input name="nickname" type="text" class="nickname" placeholder="닉네임">
+        </div>
+        <input type="submit" class="btn" value="J O I N" onclick="alert('가입이 완료되었습니다!')">
+      </form>
+    </div>
+</div>
+</div>
+      <footer class="footer">
+        <div class="grid" maxwidth="sm"></div>
+        <div class="root" style="margin-left: 7%; margin-bottom: 10px;">
+            <p class="school">전라남도 순천시 중앙로 255 순천대학교 공과대학 3호관</p>
+            <p class="e-mail address">E-mail @sncu.ac.kr </p>
+            <p class="telephone">TEL. 061.750.XXXX</p>
+            <p class="source">
+                Copyright © 
+                <br>
+                기억조각
+                 WEBSITE
+                <br>
+                2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

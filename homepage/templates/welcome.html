@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/welcome.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'js/welcome.js' %}"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div align="right">
+            <img id="logo" src="{% static 'img/mp_k.png' %}" alt="">
+        </div>
+        <div class="contents">
+            <div class="banner" id="left">
+                <ul>
+                    <li><img class="img-fluid"style="width:100%" src="{% static 'img/01.png' %}" ></li>
+                    <li><img class="img-fluid"style="width:100%" src="{% static 'img/03.png' %}" ></li>
+                    <li><img class="img-fluid"style="width:100%" src="{% static 'img/02.png' %}" ></li>
+                    
+                </ul>
+            </div>
+
+            <article id="right">
+                <h1 id="ment">우리만의 <br>Private한 SNS를<br>원하시나요? </h1>
+                <br><br>
+                <form action="" method="post">
+                    <button type="button" onClick="location.href=SCNU/front3/login.css" class="btn btn-warning">></button>
+                </form>
+            </article>
+        </div>
+        <!-- <footer>
+            &nbsp;
+            <h2>memory pieces</h2>
+            <p>멋쟁이사자처럼 대학 순천대학교팀</p>
+            <p>문의 전화번호 :</p>
+            &nbsp;
+        </footer> -->
+   
+    </div>
+</body>
+</html>

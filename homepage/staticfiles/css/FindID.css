@@ -1,0 +1,391 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+html{
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+    letter-spacing: -.03em;
+    box-sizing: border-box;
+    display: block;
+}
+
+
+.login-wrap {
+    width: 468px;
+    margin: 0 auto;
+    padding: 50px 0 0;
+}
+
+div {
+    display: block;
+}
+
+h2  {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.login-wrap .tablist a {
+    position: relative;
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+    border-bottom: 1px solid #000;
+    background-color: #f2f2f3;
+}
+a {
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+meta {
+    display: none;
+}
+
+title {
+    display: none;
+}
+
+link {
+    display: none;
+}
+
+.ly-body {
+    min-height: 500px;
+    position: relative;
+    padding: 160px 0 0 0;
+}
+.ly-body .container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.sub-contents {
+    position: relative;
+    margin-top: -60px;
+    padding: 60px 50px 200px;
+}
+
+.login-wrap {
+    width: 468px;
+    margin: 0 auto;
+    padding: 50px 0 0;
+    margin-bottom: 52px;
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+    font-weight: 400;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    margin: 0;
+}
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    border-image: initial;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+legend {
+    font-size: 0;
+    border: 0;
+    padding: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.login-wrap .tablist {
+    margin-bottom: 30px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul li {
+    list-style-type: none;
+}
+.login-wrap .tablist li {
+    position: relative;
+    float: left;
+    width: 33.3333%;
+}
+.login-wrap .tablist.col2 li {
+    width: 50%;
+}
+.login-wrap .tablist a {
+    position: relative;
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+    border-bottom: 1px solid #000;
+    background-color: #f2f2f3;
+}
+.aria-hidden {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -99999px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    color: transparent;
+}
+.find-id-pwd label {
+    margin-bottom: 15px;
+    color: #000;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.login-wrap label {
+    display: block;
+    padding-top: 24px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+.find-id-pwd .input {
+    height: 40px;
+}
+.find-id-pwd .input-type-mail .input {
+    width: 145px;
+}
+.input-type-mail .input {
+    width: 139px;
+    float: left;
+}
+
+input {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.input-type-mail .hyp {
+    float: left;
+    width: 26px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.find-id-pwd .input-type-mail .input {
+    width: 145px;
+}
+
+.find-id-pwd .input {
+    height: 40px;
+}
+.input-type-mail .input {
+    width: 139px;
+    float: left;
+}
+input[type=text], input[type=password], textarea {
+    width: 100%;
+    padding: 9px 19px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    height: 40px;
+    color: #333;
+}
+.find-id-pwd .input-type-mail .inp-select {
+    width: 146px;
+}
+
+.input-type-mail select {
+    float: left;
+    width: 131px;
+    margin-left: 6px;
+}
+.inp-select {
+    width: 100%;
+    height: 40px;
+    padding: 9px 40px 8px 20px;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/com/bg_select.png) no-repeat 100% 50% #fff;
+    font-size: 14px;
+    color: #333;
+}
+button, select {
+    text-transform: none;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+button {
+    overflow: visible;
+}
+.login-wrap button[type=submit] {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+    background-color: #7f7059;
+    font-size: 14px;
+    color: #fff;
+}
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+.aria-hidden {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -99999px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    color: transparent;
+}
+.find-id-pwd label {
+    margin-bottom: 15px;
+    color: #000;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.login-wrap label {
+    display: block;
+    padding-top: 24px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+.find-id-pwd .input {
+    height: 40px;
+}
+
+input[type=text], input[type=password], textarea {
+    width: 100%;
+    padding: 9px 19px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    height: 40px;
+    color: #333;
+}
+input {
+    line-height: normal;
+    cursor: default;
+}
+label {
+    cursor: default;
+}
+.login-wrap label {
+    display: block;
+    padding-top: 24px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+.find-id-pwd label {
+    margin-bottom: 15px;
+    color: #000;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.find-id-pwd .input {
+    height: 40px;
+}
+
+input[type=text], input[type=password], textarea {
+    width: 100%;
+    padding: 9px 19px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    height: 40px;
+    color: #333;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+input {
+    line-height: normal;
+}
+.find-id-pwd .input {
+    height: 40px;
+}
+
+
+.login-wrap button[type=submit] {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+    background-color: #7f7059;
+    font-size: 14px;
+    color: #fff;
+}

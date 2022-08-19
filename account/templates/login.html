@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기억조각</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/53a8c415f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body>
+    <header>
+    <div class="wrapper">
+        <h1>기억조각</h1>
+        <nav>
+        <ul class="menu">
+            <li><a href="./Home.html">Home</a></li>
+            <li><a href="./Write.html">Write</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+    <div>
+            <div class="wrap">
+        <div class="login">
+            <h2>Log-in</h2>
+            <div class="login_id">
+                <h4>ID </h4>
+                <input type="email" name="" id="" placeholder="ID or Email">
+            </div>
+            <div class="login_pw">
+                <h4>Password</h4>
+                <input type="password" name="" id="" placeholder="Password">
+            </div>
+            
+            <div class="brbrr">
+                <a class="Sing-Up" tabindex="0" aria-disabled="false" href="/singup.html" style="color:black; margin-top: 20px;">
+            <span class="Sing-In">회원가입</span>
+            <span class="brbr"></span>        
+                </a>
+                
+            <p>
+                <div class="forgot_pw">
+                    <a class="idid" tabindex="0" aria-disabled="false" href="/FindID.html" style="color:black; margin-top: 20px;">
+              아이디 찾기</a>
+            </div>
+            </p>
+            <div class="forgot_pw">
+                <a class="pwpw" tabindex="0" aria-disabled="false" href="/FindID.html" style="color:black; margin-top: 20px;">
+                비밀번호 찾기</a>
+            </div>
+        </a>
+            </div>
+            <div class="submit">
+                <button onclick="window.open('Home.html')">submit</button >
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="grid" maxwidth="sm"></div>
+        <div class="root" style="margin-left: 7%; margin-bottom: 10px;">
+            <p class="school">전라남도 순천시 중앙로 255 순천대학교 공과대학 3호관</p>
+            <p class="e-mail address">E-mail @sncu.ac.kr </p>
+            <p class="telephone">TEL. 061.750.XXXX</p>
+            <p class="source">
+                Copyright © 
+                <br>
+                기억조각
+                 WEBSITE
+                <br>
+                2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
